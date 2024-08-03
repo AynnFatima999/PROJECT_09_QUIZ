@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(`\n`);
@@ -110,7 +111,7 @@ let Quiz8 = await inquirer.prompt([{
         message: "How do you explicitly specify the type of a variable in TypeScript?",
         choices: [":type", "::type", "as type", "->type"],
     }]);
-if (Quiz8.one === ":type") {
+if (Quiz8.question8 === ":type") {
     console.log(chalk.green.bold("Your answer is Correct"));
     marks++;
 }
